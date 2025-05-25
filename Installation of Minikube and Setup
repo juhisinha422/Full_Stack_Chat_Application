@@ -1,0 +1,40 @@
+Project-1: Microservices with MongoDB 
+======================================== 
+# Name: Chat Application on K8S – Three tier (On Minikube)
+=============================================== 
+https://github.com/LondheShubham153/full-stack_chatApp
+
+https://minikube.sigs.k8s.io/docs/start/?arch=%2Flinux%2Fx86-64%2Fstable%2Fbinary+download
+
+	Launch new instance (30 GB and t2.medium)
+
+# sudo apt-get update
+# sudo apt-get install docker.io
+# docker --version
+# sudo usermod -aG docker $USER && newgrp docker
+# docker ps
+
+# mkdir minikube
+# cd minikube
+# sudo apt install -y curl wget apt-transport-https
+# sudo systemctl enable --now docker
+
+# curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+
+# ls
+# chmod +x minikube
+# sudo mv minikube /usr/local/bin/
+# minikube version
+
+# minikube start --driver=docker --vm=true
+# minikube status
+# alias kubectl="minikube kubectl --"
+
+# kubectl get nodes
+# kubectl get pods -A
+
+# When you are done, you can stop the Minikube cluster with:
+$ minikube stop
+
+# If you wish to delete the Minikube cluster entirely, you can do so with:
+$ minikube delete
