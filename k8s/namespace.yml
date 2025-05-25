@@ -1,0 +1,13 @@
+# mkdir k8s
+# cd k8s
+
+# cd /home/ubuntu/kubernetes/Projects/full-stack_chatApp/k8s
+# vi namespace.yml
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: chat-app
+
+# kubectl apply -f namespace.yml
+# kubectl get ns 
