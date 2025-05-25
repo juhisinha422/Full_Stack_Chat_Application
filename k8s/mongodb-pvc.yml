@@ -15,3 +15,17 @@ spec:
 
 # kubectl apply -f mongodb-pvc.yml
 # kubectl get pvc -n chat-app
+
+# kubectl get pods -n chat-app
+
+# Note: If error encounters in the pods status do as below.
+# kubectl delete -f backend-deployment.yml
+# kubectl delete -f frontend-deployment.yml
+# kubectl logs frontend-deployment-7f6b448979-vtpb7 -n chat-app
+# (host not found error)
+
+# kubectl apply -f frontend-deployment.yml
+# kubectl get pods -n chat-app
+
+# So error is due to service: In backend /api is configured for backend, so we need to create backend-service.
+
