@@ -1,0 +1,17 @@
+# vi mongodb-service.yml
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongodb
+  namespace: chat-app
+spec:
+  selector:
+    app: mongodb
+  ports:
+  - port: 27017
+    targetPort: 27017
+
+
+#  kubectl apply -f mongodb-service.yml
+
