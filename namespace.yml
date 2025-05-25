@@ -1,4 +1,4 @@
-# /home/ubuntu/kubernetes/Projects/full-stack_chatApp/k8s
+# cd /home/ubuntu/kubernetes/Projects/full-stack_chatApp/k8s
 
 apiVersion: v1
 kind: Namespace
