@@ -14,3 +14,4 @@ spec:
 
 
 # kubectl apply -f mongodb-pvc.yml
+# kubectl get pvc -n chat-app
