@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: chatapp-frontend
-        image: trainwithshubham/chatapp-frontend
+        image: juhisinha/chatapp-frontend
         ports:
         - containerPort: 80
         env:
