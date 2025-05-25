@@ -32,3 +32,6 @@ spec:
               key: jwt 
         - name: PORT
           value: "5001"
+
+
+# kubectl apply -f backend-deployment.yml
