@@ -18,3 +18,5 @@ spec:
 #  kubectl apply -f backend-deployment.yml
 #  kubectl apply -f frontend-deployment.yml
 #  kubectl get pods -n chat-app
+
+#  sudo -E kubectl port-forward service/frontend 80:80 -n chat-app --address=0.0.0.0
