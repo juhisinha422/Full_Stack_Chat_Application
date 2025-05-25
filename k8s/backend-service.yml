@@ -13,3 +13,4 @@ spec:
     targetPort: 5001
 
 # kubectl apply -f backend-service.yml
+# #  sudo -E kubectl port-forward service/backend 5001:5001 -n chat-app --address=0.0.0.0
