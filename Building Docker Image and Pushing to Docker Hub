@@ -1,0 +1,55 @@
+# mkdir Kubernetes
+# cd Kubernetes
+
+# mkdir Projects
+# cd Projects
+
+# git clone https://github.com/juhisinha422/full-stack_chatApp.git
+# ls
+# cd full-stack_chatApp/
+
+# rm -rf k8s
+
+# Logged in to Docker Hub and sign in.
+# Go to Settings and click on Personal Access Token.
+# Give name: k8s-project
+# Expiry date: 30 days
+# Access: Read, Write, Delete
+# Click on Generate token.
+
+# Now go to server and execute below commands to connect with docker hub.
+
+# Run: - 
+# docker login -u juhisinha
+# At the password prompt, enter the personal access token.
+
+
+# Start building the backend image and push to docker hub.
+# cd backend
+
+# Build the docker image of backend.
+# docker build -t juhisinha/chat-app-backend:latest .
+(here juhisinha is docker hub username)
+
+# docker images
+
+# Push on docker hub.
+# docker push juhisinha/chat-app-backend:latest
+
+# cd ..
+# cd frontend
+# ls
+
+# Build frontend image now.
+# docker build -t juhisinha/chatapp-frontend:latest .
+
+#Push to docker hub.
+# docker push juhisinha/chatapp-frontend:latest
+
+
+	Note to change image name : 
+# docker image tag <old-image name> <new-image-name>
+
+
+# mkdir k8s
+# cd k8s
