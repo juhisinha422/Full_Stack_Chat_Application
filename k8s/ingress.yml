@@ -32,3 +32,24 @@ spec:
 
 
 # kubectl apply -f ingress.yml
+# kubectl get ingress -n chat-app
+
+# Create minikube ingress
+# minikube addons enable ingress
+
+# kubectl get ns
+# kubectl get svc -n ingress-nginx
+
+# lsof -i:80 (whatever is running on our machine on port no 80, we can get id)
+
+# sudo -E kubectl port-forward svc/ingress-nginx-controller -n ingress-nginx 80:80
+# kubectl delete -f frontend-service.yml
+# kubectl apply -f frontend-service.yml
+
+# kubectl delete -f .
+# kubectl apply -f namespace.yml
+# kubectl apply -f .
+
+# sudo -E kubectl port-forward svc/ingress-nginx-controller -n ingress-nginx 80:80 --address=0.0.0.0
+
+
